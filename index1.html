@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sahil's Blog | Resume-Based</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: #f4f4f4; color: #333; }
+
+    header {
+      background: #1e1e2f;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #007bff;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .blog-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .blog-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .blog-card .content {
+      padding: 20px;
+    }
+
+    .blog-card h3 {
+      margin-bottom: 10px;
+      color: #007bff;
+    }
+
+    .blog-card p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .section {
+      background: #fff;
+      border-radius: 10px;
+      padding: 25px;
+      margin-top: 40px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .about p, .contact p {
+      font-size: 16px;
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+
+    .contact i {
+      margin-right: 10px;
+      color: #007bff;
+      width: 20px;
+      text-align: center;
+    }
+
+    .contact a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1e1e2f;
+      color: white;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sahil Awasthi's Blog</h1>
+    <nav>
+      <a href="#blog">Blog</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="blog">
+      <h2>Latest from Sahil</h2>
+      <div class="blog-grid">
+        <div class="blog-card">
+          <img src="https://www.labellerr.com/blog/content/images/2024/02/img10-2.webp" alt="DDoS Project" />
+          <div class="content">
+            <h3>DDoS Detection using ML</h3>
+            <p>I built a Machine Learning model that detects DDoS attacks using datasets like KDDCUP99. I implemented Decision Tree, SVM, KNN and evaluated with accuracy, precision, recall, and F1-score.</p>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="https://static.vecteezy.com/system/resources/previews/011/067/273/non_2x/portfolio-button-portfolio-speech-bubble-portfolio-colorful-web-banner-illustration-vector.jpg" alt="Portfolio" />
+          <div class="content">
+            <h3>How I Built My Portfolio Website</h3>
+            <p>I designed and developed a responsive personal portfolio website using HTML and CSS. It features my skills, projects, resume, and contact info. View it here: <a href="https://sahilawasthi4492.github.io/My-portfolio/" target="_blank">My Portfolio</a>.</p>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="https://t3.ftcdn.net/jpg/02/14/87/96/360_F_214879686_R3HFJlk6WLr1kcdvy6Q9rtNASKN0BZBS.jpg" alt="Internship Blog" />
+          <div class="content">
+            <h3>My Web Development Internship Journey</h3>
+            <p>In my internship at ApexPlanet, I built projects from landing pages to a final full-stack optimized portfolio. Learned GitHub, HTML, CSS, responsive design, and optimization techniques.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <h2>About Me</h2>
+      <p>I'm <strong>Sahil Awasthi</strong>, a B.Tech CSE (Machine Learning) student at CMR Institute of Technology, Hyderabad. I'm passionate about Machine Learning, Web Development, and Cybersecurity. I've built real-world projects like DDoS detection using ML and personal portfolios, and have experience with Python, HTML, CSS, and GitHub.</p>
+    </section>
+
+    <section class="section contact" id="contact">
+      <h2>Contact Me</h2>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:sahilawasthi619@gmail.com" target="_blank">sahilawasthi619@gmail.com</a></p>
+      <p><i class="fas fa-phone"></i> <a href="tel:+917013246629" target="_blank">+91-7013246629</a></p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/sahil-awasthi-a33546295" target="_blank">LinkedIn Profile</a></p>
+      <p><i class="fab fa-github"></i> <a href="https://github.com/Sahilawasthi4492" target="_blank">GitHub Profile</a></p>
+      <p><i class="fas fa-globe"></i> <a href="https://sahilawasthi4492.github.io/My-portfolio/" target="_blank">Visit Portfolio</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Sahil Awasthi | Blog based on Resume Projects | ApexPlanet Internship</p>
+  </footer>
+
+</body>
+</html>
